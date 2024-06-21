@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #110f0f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    margin: 15vh;
+    background-image: url("https://cdn.pixabay.com/photo/2023/11/26/10/04/lord-shiva-8413252_1280.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+    font-weight: 600;
+    color: #fff;
+    background-color: #0056b3;
+    position: fixed;
+    top: 1px;
+    border: 2px solid black;
+    width: 100vw;
+    height: 10vh;
+}
+.container {
+    display: flex;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h1 {
+    margin-bottom: 20px;
+}
+
+label, select, input, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#result, #detail-result {
+    margin-top: 20px;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.container2 {
+     height: fit-content;
+     /* width: 100vw; */
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#noteSection{
+    display: inline;
+    flex-wrap: nowrap;
+    margin: auto;
+    position: fixed ;
+    color: #fff;
+    bottom: 10px;
+    
+}
+
+#noteSection {
+    position: fixed;
+    bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    white-space: nowrap; /* Prevent the text from wrapping */
+    overflow: hidden;
+    /* position: relative; */
+    animation: move-text 30s linear infinite;
+}
+
+
+@keyframes move-text {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
